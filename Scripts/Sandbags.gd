@@ -61,6 +61,8 @@ func _on_reset_button_up() -> void:
 	for array: Array[int] in sandbags:
 		array.resize(8)
 	direction = 0
+	$Grid.text = "Show Grid"
+	$Grid.set_pressed_no_signal(false)
 
 func _on_grid_toggled(toggled_on: bool) -> void:
 	print('Grid Visibility:', toggled_on)
