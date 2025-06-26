@@ -5,6 +5,7 @@ const ES = preload("res://Views/ES.tscn")
 const SW = preload("res://Views/SW.tscn")
 const WN = preload("res://Views/WN.tscn")
 const GRID = preload("res://Views/grid.tscn")
+const INFO = preload("res://Views/info.tscn")
 
 var direction: int:
 	set(value):
@@ -29,6 +30,8 @@ const directions: Dictionary = {0: "NE", 1: "ES",2: "SW",3: "WN"}
 const views: Dictionary = {0: NE, 1: ES,2: SW,3: WN}
 
 var view: Node
+@onready var grid: Button = $HBoxContainer/Grid
+@onready var info: Button = $HBoxContainer/Info
 
 var count: int:
 	set(value):
@@ -61,8 +64,8 @@ func _on_reset_button_up() -> void:
 	for array: Array[int] in sandbags:
 		array.resize(8)
 	direction = 0
-	$Grid.text = "Show Grid"
-	$Grid.set_pressed_no_signal(false)
+	grid.text = "Show Grid"
+	grid.set_pressed_no_signal(false)
 
 func _on_grid_toggled(toggled_on: bool) -> void:
 	print('Grid Visibility:', toggled_on)
@@ -74,8 +77,11 @@ func _on_grid_toggled(toggled_on: bool) -> void:
 		view = GRID.instantiate()
 		add_child(view)
 		move_child(view, 0)
-		$Grid.text = "Show Stairs"
+		grid.text = "Show Stairs"
 	else:
 		direction = direction
-		$Grid.text = "Show Grid"
-	
+		grid.text = "Show Grid"
+
+func _on_info_pressed() -> void:
+	var temp = INFO.instantiate()
+	add_child(temp)

@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw08ckf4pv3ya"]
+
+[ext_resource type="Script" uid="uid://cglrxnaubjin" path="res://Views/info.gd" id="1_i3s3k"]
+
+[node name="Info" type="Control"]
+z_index = 10
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i3s3k")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0789931
+anchor_top = 0.0771605
+anchor_right = 1.07899
+anchor_bottom = 1.07716
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "[b]How to use[/b]
+Select the 12 squares that have sandbags on them, then click \"Grid\" to view which tiles have to be lit up
+
+[b]Contact[/b]
+Discord: jole.k
+Github: TrueJole
+Color grid by kevinsalsa.
+
+Version: 0.5
+
+This tool has a Github repository, consider contributing.
+
+Powered by Godot."
+metadata/_edit_use_anchors_ = true
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -8.0
+offset_bottom = 8.0
+grow_horizontal = 0
+text = "Back
+"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
