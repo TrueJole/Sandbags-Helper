@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 window/stretch/mode="canvas_items"
 
+[gui]
+
+theme/custom="uid://b1i0nawebtkv7"
+
 [importer_defaults]
 
 texture={
