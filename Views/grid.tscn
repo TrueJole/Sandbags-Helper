@@ -949,10 +949,10 @@ y_coordinate = 1
 
 [node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 299.039
-offset_top = 185.803
-offset_right = 339.039
-offset_bottom = 258.803
+offset_left = 298.839
+offset_top = 187.097
+offset_right = 338.839
+offset_bottom = 260.097
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -965,10 +965,10 @@ y_coordinate = 1
 
 [node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 337.297
-offset_top = 190.094
-offset_right = 377.297
-offset_bottom = 259.094
+offset_left = 338.839
+offset_top = 192.258
+offset_right = 378.839
+offset_bottom = 261.258
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -981,10 +981,10 @@ y_coordinate = 1
 
 [node name="Label5" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 378.588
-offset_top = 195.255
-offset_right = 418.588
-offset_bottom = 264.255
+offset_left = 376.258
+offset_top = 196.129
+offset_right = 416.258
+offset_bottom = 265.129
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -997,10 +997,10 @@ y_coordinate = 1
 
 [node name="Label6" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 418.588
-offset_top = 199.126
-offset_right = 458.588
-offset_bottom = 268.126
+offset_left = 417.548
+offset_top = 201.29
+offset_right = 457.548
+offset_bottom = 270.29
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1013,10 +1013,10 @@ y_coordinate = 1
 
 [node name="Label7" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 458.588
-offset_top = 202.997
-offset_right = 498.588
-offset_bottom = 271.997
+offset_left = 460.129
+offset_top = 205.161
+offset_right = 500.129
+offset_bottom = 274.161
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1029,10 +1029,10 @@ y_coordinate = 1
 
 [node name="Label8" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 502.459
-offset_top = 208.158
-offset_right = 542.459
-offset_bottom = 277.158
+offset_left = 504.0
+offset_top = 210.323
+offset_right = 544.0
+offset_bottom = 279.323
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1125,10 +1125,10 @@ y_coordinate = 2
 
 [node name="Label14" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 412.136
-offset_top = 223.642
-offset_right = 452.136
-offset_bottom = 292.642
+offset_left = 413.677
+offset_top = 225.806
+offset_right = 453.677
+offset_bottom = 294.806
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1141,10 +1141,10 @@ y_coordinate = 2
 
 [node name="Label15" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 456.007
-offset_top = 228.803
-offset_right = 496.007
-offset_bottom = 297.803
+offset_left = 456.258
+offset_top = 230.968
+offset_right = 496.258
+offset_bottom = 299.968
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1157,10 +1157,10 @@ y_coordinate = 2
 
 [node name="Label16" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 501.168
-offset_top = 232.674
-offset_right = 541.168
-offset_bottom = 301.674
+offset_left = 502.71
+offset_top = 234.839
+offset_right = 542.71
+offset_bottom = 303.839
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1301,10 +1301,10 @@ y_coordinate = 3
 
 [node name="Label25" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 170.846
-offset_top = 250.739
-offset_right = 210.846
-offset_bottom = 319.739
+offset_left = 169.806
+offset_top = 255.484
+offset_right = 209.806
+offset_bottom = 324.484
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1349,10 +1349,10 @@ y_coordinate = 4
 
 [node name="Label28" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 302.459
-offset_top = 270.094
-offset_right = 342.459
-offset_bottom = 339.094
+offset_left = 305.29
+offset_top = 269.677
+offset_right = 345.29
+offset_bottom = 338.677
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1429,10 +1429,10 @@ y_coordinate = 4
 
 [node name="Label33" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 147.911
-offset_top = 280.541
-offset_right = 187.911
-offset_bottom = 349.541
+offset_left = 147.871
+offset_top = 285.161
+offset_right = 187.871
+offset_bottom = 354.161
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1557,10 +1557,10 @@ y_coordinate = 5
 
 [node name="Label41" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 122.105
-offset_top = 316.67
-offset_right = 162.105
-offset_bottom = 385.67
+offset_left = 125.935
+offset_top = 318.71
+offset_right = 165.935
+offset_bottom = 387.71
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1573,10 +1573,10 @@ y_coordinate = 6
 
 [node name="Label42" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 172.136
-offset_top = 322.997
-offset_right = 212.136
-offset_bottom = 391.997
+offset_left = 176.258
+offset_top = 325.161
+offset_right = 216.258
+offset_bottom = 394.161
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1621,10 +1621,10 @@ y_coordinate = 6
 
 [node name="Label45" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 324.394
-offset_top = 348.803
-offset_right = 364.394
-offset_bottom = 417.803
+offset_left = 329.806
+offset_top = 348.387
+offset_right = 369.806
+offset_bottom = 417.387
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1717,10 +1717,10 @@ y_coordinate = 7
 
 [node name="Label51" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 203.395
-offset_top = 370.864
-offset_right = 243.395
-offset_bottom = 439.864
+offset_left = 203.355
+offset_top = 376.774
+offset_right = 243.355
+offset_bottom = 445.774
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1813,10 +1813,10 @@ y_coordinate = 7
 
 [node name="Label57" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 78.2338
-offset_top = 391.509
-offset_right = 118.234
-offset_bottom = 460.509
+offset_left = 66.5807
+offset_top = 403.871
+offset_right = 106.581
+offset_bottom = 472.871
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1829,10 +1829,10 @@ y_coordinate = 8
 
 [node name="Label58" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 124.394
-offset_top = 410.739
-offset_right = 164.394
-offset_bottom = 479.739
+offset_left = 122.065
+offset_top = 414.194
+offset_right = 162.065
+offset_bottom = 483.194
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1861,10 +1861,10 @@ y_coordinate = 8
 
 [node name="Label60" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 233.072
-offset_top = 430.219
-offset_right = 273.072
-offset_bottom = 499.219
+offset_left = 236.903
+offset_top = 433.548
+offset_right = 276.903
+offset_bottom = 502.548
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1909,10 +1909,10 @@ y_coordinate = 8
 
 [node name="Label63" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 422.458
-offset_top = 462.352
-offset_right = 462.458
-offset_bottom = 531.352
+offset_left = 421.419
+offset_top = 467.097
+offset_right = 461.419
+offset_bottom = 536.097
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -1925,10 +1925,10 @@ y_coordinate = 8
 
 [node name="Label64" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = 488.589
-offset_top = 471.251
-offset_right = 528.589
-offset_bottom = 540.251
+offset_left = 488.516
+offset_top = 476.129
+offset_right = 528.516
+offset_bottom = 545.129
 scale = Vector2(0.514014, 0.512646)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
