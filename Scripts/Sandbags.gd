@@ -22,11 +22,11 @@ var direction: int:
 		move_child(view, 0)
 		$Left.visible = true
 		$Right.visible = true
-		$DirectionLabel.visible = true
+		$DirectionCompass.visible = true
 
 var sandbags: Array[Array]
 
-const directions: Dictionary = {0: "NE", 1: "ES",2: "SW",3: "WN"}
+#const directions: Dictionary = {0: "NE", 1: "ES",2: "SW",3: "WN"}
 const views: Dictionary = {0: NE, 1: ES,2: SW,3: WN}
 
 var view: Node
@@ -46,15 +46,12 @@ func _ready() -> void:
 		array.resize(8)
 	direction = 0
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	$DirectionLabel.text = str(directions[direction])
-
 func _on_left_button_up() -> void:
+	$DirectionCompass.turnLeft()
 	direction -= 1
 
 func _on_right_button_up() -> void:
+	$DirectionCompass.turnRight()
 	direction += 1
 
 func _on_reset_button_up() -> void:
@@ -71,7 +68,7 @@ func _on_grid_toggled(toggled_on: bool) -> void:
 	print('Grid Visibility:', toggled_on)
 	$Left.visible = not toggled_on
 	$Right.visible = not toggled_on
-	$DirectionLabel.visible = not toggled_on
+	$DirectionCompass.visible = not toggled_on
 	if toggled_on:
 		view.queue_free()
 		view = GRID.instantiate()

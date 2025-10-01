@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dupyccnutupbc"]
+[gd_scene load_steps=3 format=3 uid="uid://dupyccnutupbc"]
 
 [ext_resource type="Script" uid="uid://dxm0s5lle1045" path="res://Scripts/Sandbags.gd" id="1_0fbet"]
+[ext_resource type="PackedScene" uid="uid://coxfe3exh2sh3" path="res://DirectionCompass.tscn" id="2_62e2m"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,19 +12,14 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0fbet")
 
-[node name="DirectionLabel" type="Label" parent="."]
-z_index = 2
+[node name="DirectionCompass" parent="." instance=ExtResource("2_62e2m")]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
+offset_left = -25.0
+offset_right = 25.0
 grow_horizontal = 2
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 50
 
 [node name="CountLabel" type="Label" parent="."]
 z_index = 2
@@ -66,7 +62,7 @@ grow_vertical = 2
 text = ">"
 
 [node name="Reset" type="Button" parent="."]
-layout_mode = 2
+layout_mode = 0
 offset_right = 51.0
 offset_bottom = 40.0
 text = "Reset"
