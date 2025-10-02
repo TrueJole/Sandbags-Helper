@@ -1,17 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://coxfe3exh2sh3"]
 
 [ext_resource type="Script" uid="uid://bw8vw8g8xdtng" path="res://Scripts/direction_compass.gd" id="1_ylef4"]
-
-[sub_resource type="SystemFont" id="SystemFont_qn08u"]
-font_names = PackedStringArray("Miriam Mono CLM")
-font_weight = 850
+[ext_resource type="FontFile" uid="uid://cxyynujig13hy" path="res://MIRIAMMONOCLM-BOLD.TTF" id="2_br2nf"]
 
 [node name="DirectionCompass" type="Control"]
-custom_minimum_size = Vector2(50, 50)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 50.0
-offset_bottom = 50.0
+offset_right = 100.0
+offset_bottom = 100.0
 pivot_offset = Vector2(0, 46)
 script = ExtResource("1_ylef4")
 
@@ -30,7 +26,7 @@ theme_override_colors/default_color = Color(1, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/paragraph_separation = 7
 theme_override_constants/outline_size = 15
-theme_override_fonts/normal_font = SubResource("SystemFont_qn08u")
+theme_override_fonts/normal_font = ExtResource("2_br2nf")
 theme_override_font_sizes/normal_font_size = 56
 bbcode_enabled = true
 text = "N"
@@ -50,7 +46,7 @@ pivot_offset = Vector2(18, 32)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/paragraph_separation = 7
 theme_override_constants/outline_size = 15
-theme_override_fonts/normal_font = SubResource("SystemFont_qn08u")
+theme_override_fonts/normal_font = ExtResource("2_br2nf")
 theme_override_font_sizes/normal_font_size = 56
 bbcode_enabled = true
 text = "E"
@@ -70,7 +66,7 @@ pivot_offset = Vector2(18, 33)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/paragraph_separation = 7
 theme_override_constants/outline_size = 15
-theme_override_fonts/normal_font = SubResource("SystemFont_qn08u")
+theme_override_fonts/normal_font = ExtResource("2_br2nf")
 theme_override_font_sizes/normal_font_size = 56
 bbcode_enabled = true
 text = "W"
@@ -90,7 +86,7 @@ pivot_offset = Vector2(17, 32)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/paragraph_separation = 7
 theme_override_constants/outline_size = 15
-theme_override_fonts/normal_font = SubResource("SystemFont_qn08u")
+theme_override_fonts/normal_font = ExtResource("2_br2nf")
 theme_override_font_sizes/normal_font_size = 56
 bbcode_enabled = true
 text = "S"
