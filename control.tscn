@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dupyccnutupbc"]
+[gd_scene format=3 uid="uid://dupyccnutupbc"]
 
 [ext_resource type="Script" uid="uid://dxm0s5lle1045" path="res://Scripts/Sandbags.gd" id="1_0fbet"]
 [ext_resource type="PackedScene" uid="uid://coxfe3exh2sh3" path="res://DirectionCompass.tscn" id="2_62e2m"]
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" unique_id=1125203784]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0fbet")
 
-[node name="DirectionCompass" parent="." instance=ExtResource("2_62e2m")]
+[node name="DirectionCompass" parent="." unique_id=742412219 instance=ExtResource("2_62e2m")]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -21,7 +21,7 @@ offset_left = -25.0
 offset_right = 25.0
 grow_horizontal = 2
 
-[node name="CountLabel" type="Label" parent="."]
+[node name="CountLabel" type="Label" parent="." unique_id=1290856898]
 z_index = 2
 layout_mode = 1
 anchors_preset = 2
@@ -34,7 +34,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 50
 
-[node name="Left" type="Button" parent="."]
+[node name="Left" type="Button" parent="." unique_id=163335923]
 z_index = 2
 layout_mode = 1
 anchors_preset = 4
@@ -46,7 +46,7 @@ offset_bottom = 15.5
 grow_vertical = 2
 text = "<"
 
-[node name="Right" type="Button" parent="."]
+[node name="Right" type="Button" parent="." unique_id=482551219]
 z_index = 2
 layout_mode = 1
 anchors_preset = 6
@@ -61,13 +61,13 @@ grow_horizontal = 0
 grow_vertical = 2
 text = ">"
 
-[node name="Reset" type="Button" parent="."]
+[node name="Reset" type="Button" parent="." unique_id=608996237]
 layout_mode = 0
 offset_right = 51.0
 offset_bottom = 40.0
 text = "Reset"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1447362999]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -76,11 +76,11 @@ offset_left = -87.0
 offset_bottom = 40.0
 grow_horizontal = 0
 
-[node name="Info" type="Button" parent="HBoxContainer"]
+[node name="Info" type="Button" parent="HBoxContainer" unique_id=1370094389]
 layout_mode = 2
 text = "Info"
 
-[node name="Grid" type="Button" parent="HBoxContainer"]
+[node name="Grid" type="Button" parent="HBoxContainer" unique_id=2128082018]
 layout_mode = 2
 toggle_mode = true
 text = "Show Grid"

@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://coxfe3exh2sh3"]
+[gd_scene format=3 uid="uid://coxfe3exh2sh3"]
 
 [ext_resource type="Script" uid="uid://bw8vw8g8xdtng" path="res://Scripts/direction_compass.gd" id="1_ylef4"]
 [ext_resource type="FontFile" uid="uid://cxyynujig13hy" path="res://MIRIAMMONOCLM-BOLD.TTF" id="2_br2nf"]
 
-[node name="DirectionCompass" type="Control"]
+[node name="DirectionCompass" type="Control" unique_id=1762419481]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 100.0
@@ -11,7 +11,7 @@ offset_bottom = 100.0
 pivot_offset = Vector2(0, 46)
 script = ExtResource("1_ylef4")
 
-[node name="NLabel" type="RichTextLabel" parent="."]
+[node name="NLabel" type="RichTextLabel" parent="." unique_id=392877823]
 clip_contents = false
 layout_mode = 1
 anchors_preset = 10
@@ -32,7 +32,7 @@ bbcode_enabled = true
 text = "N"
 fit_content = true
 
-[node name="ELabel" type="RichTextLabel" parent="."]
+[node name="ELabel" type="RichTextLabel" parent="." unique_id=784433706]
 clip_contents = false
 layout_mode = 1
 anchors_preset = 10
@@ -52,7 +52,7 @@ bbcode_enabled = true
 text = "E"
 fit_content = true
 
-[node name="WLabel" type="RichTextLabel" parent="."]
+[node name="WLabel" type="RichTextLabel" parent="." unique_id=1633006033]
 clip_contents = false
 layout_mode = 1
 anchors_preset = 10
@@ -72,7 +72,7 @@ bbcode_enabled = true
 text = "W"
 fit_content = true
 
-[node name="SLabel" type="RichTextLabel" parent="."]
+[node name="SLabel" type="RichTextLabel" parent="." unique_id=733194393]
 clip_contents = false
 layout_mode = 1
 anchors_preset = 10

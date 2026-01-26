@@ -1,11 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://c7oexb38f7wsl"]
+[gd_scene format=3 uid="uid://c7oexb38f7wsl"]
 
 [ext_resource type="Texture2D" uid="uid://b584felceajka" path="res://Assets/Grid.png" id="1_61cg2"]
 [ext_resource type="Script" uid="uid://hrrx2861qe1v" path="res://Scripts/grid.gd" id="1_lnaan"]
 [ext_resource type="Script" uid="uid://bdojunxebjvyb" path="res://Scripts/gridX.gd" id="2_73ekl"]
 [ext_resource type="Texture2D" uid="uid://dlvjvydttju42" path="res://Assets/FloorGrid.png" id="4_sfyqg"]
 
-[node name="Grid" type="Control"]
+[node name="Grid" type="Control" unique_id=1294329706]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,7 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lnaan")
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=2089630560]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -27,24 +27,24 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.775, 0.775)
 
-[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1136669531]
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(1220, 617)
 render_target_update_mode = 4
 
-[node name="HBoxContainer" type="HBoxContainer" parent="SubViewportContainer/SubViewport"]
+[node name="HBoxContainer" type="HBoxContainer" parent="SubViewportContainer/SubViewport" unique_id=1215373755]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Control" type="Control" parent="SubViewportContainer/SubViewport/HBoxContainer"]
+[node name="Control" type="Control" parent="SubViewportContainer/SubViewport/HBoxContainer" unique_id=922917233]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=617755488]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -60,7 +60,7 @@ grow_vertical = 2
 texture = ExtResource("1_61cg2")
 expand_mode = 3
 
-[node name="Label" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=2041254175]
 layout_mode = 0
 offset_left = 71.1123
 offset_top = 64.6109
@@ -73,7 +73,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 1
 
-[node name="Label2" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label2" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=89361044]
 layout_mode = 0
 offset_left = 132.112
 offset_top = 64.6109
@@ -86,7 +86,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 1
 
-[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=582712645]
 layout_mode = 0
 offset_left = 192.112
 offset_top = 64.6109
@@ -99,7 +99,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 1
 
-[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1886450240]
 layout_mode = 0
 offset_left = 253.112
 offset_top = 64.6109
@@ -112,7 +112,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 1
 
-[node name="Label5" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label5" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=714833393]
 layout_mode = 0
 offset_left = 315.112
 offset_top = 64.6109
@@ -125,7 +125,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 1
 
-[node name="Label6" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label6" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=793783603]
 layout_mode = 0
 offset_left = 376.112
 offset_top = 65.6109
@@ -138,7 +138,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 1
 
-[node name="Label7" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label7" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1436884271]
 layout_mode = 0
 offset_left = 438.112
 offset_top = 64.6109
@@ -151,7 +151,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 1
 
-[node name="Label8" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label8" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1489604916]
 layout_mode = 0
 offset_left = 497.112
 offset_top = 64.6109
@@ -164,7 +164,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 1
 
-[node name="Label9" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label9" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=204999715]
 layout_mode = 0
 offset_left = 71.1123
 offset_top = 122.611
@@ -177,7 +177,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 2
 
-[node name="Label10" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label10" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1231656845]
 layout_mode = 0
 offset_left = 132.112
 offset_top = 122.611
@@ -190,7 +190,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 2
 
-[node name="Label11" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label11" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1238440384]
 layout_mode = 0
 offset_left = 192.112
 offset_top = 122.611
@@ -203,7 +203,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 2
 
-[node name="Label12" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label12" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=711554145]
 layout_mode = 0
 offset_left = 253.112
 offset_top = 122.611
@@ -216,7 +216,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 2
 
-[node name="Label13" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label13" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=152318744]
 layout_mode = 0
 offset_left = 315.112
 offset_top = 122.611
@@ -229,7 +229,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 2
 
-[node name="Label14" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label14" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1276680286]
 layout_mode = 0
 offset_left = 376.112
 offset_top = 123.611
@@ -242,7 +242,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 2
 
-[node name="Label15" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label15" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1291011465]
 layout_mode = 0
 offset_left = 438.112
 offset_top = 122.611
@@ -255,7 +255,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 2
 
-[node name="Label16" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label16" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1388184233]
 layout_mode = 0
 offset_left = 497.112
 offset_top = 122.611
@@ -268,7 +268,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 2
 
-[node name="Label17" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label17" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=955132628]
 layout_mode = 0
 offset_left = 71.1123
 offset_top = 185.611
@@ -281,7 +281,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 3
 
-[node name="Label18" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label18" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1505965314]
 layout_mode = 0
 offset_left = 132.112
 offset_top = 185.611
@@ -294,7 +294,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 3
 
-[node name="Label19" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label19" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=520027307]
 layout_mode = 0
 offset_left = 192.112
 offset_top = 185.611
@@ -307,7 +307,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 3
 
-[node name="Label20" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label20" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1651694682]
 layout_mode = 0
 offset_left = 253.112
 offset_top = 185.611
@@ -320,7 +320,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 3
 
-[node name="Label21" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label21" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=688940907]
 layout_mode = 0
 offset_left = 315.112
 offset_top = 185.611
@@ -333,7 +333,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 3
 
-[node name="Label22" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label22" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1417796391]
 layout_mode = 0
 offset_left = 376.112
 offset_top = 186.611
@@ -346,7 +346,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 3
 
-[node name="Label23" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label23" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=482060923]
 layout_mode = 0
 offset_left = 438.112
 offset_top = 185.611
@@ -359,7 +359,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 3
 
-[node name="Label24" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label24" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1782693614]
 layout_mode = 0
 offset_left = 497.112
 offset_top = 185.611
@@ -372,7 +372,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 3
 
-[node name="Label25" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label25" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=888490318]
 layout_mode = 0
 offset_left = 71.1123
 offset_top = 245.611
@@ -385,7 +385,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 4
 
-[node name="Label26" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label26" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1207206484]
 layout_mode = 0
 offset_left = 132.112
 offset_top = 245.611
@@ -398,7 +398,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 4
 
-[node name="Label27" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label27" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=944374480]
 layout_mode = 0
 offset_left = 192.112
 offset_top = 245.611
@@ -411,7 +411,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 4
 
-[node name="Label28" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label28" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1149478685]
 layout_mode = 0
 offset_left = 253.112
 offset_top = 245.611
@@ -424,7 +424,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 4
 
-[node name="Label29" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label29" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1534230437]
 layout_mode = 0
 offset_left = 315.112
 offset_top = 245.611
@@ -437,7 +437,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 4
 
-[node name="Label30" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label30" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1252246874]
 layout_mode = 0
 offset_left = 376.112
 offset_top = 246.611
@@ -450,7 +450,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 4
 
-[node name="Label31" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label31" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1261583840]
 layout_mode = 0
 offset_left = 438.112
 offset_top = 245.611
@@ -463,7 +463,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 4
 
-[node name="Label32" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label32" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=39493322]
 layout_mode = 0
 offset_left = 497.112
 offset_top = 245.611
@@ -476,7 +476,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 4
 
-[node name="Label33" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label33" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=433834998]
 layout_mode = 0
 offset_left = 71.1123
 offset_top = 303.611
@@ -489,7 +489,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 5
 
-[node name="Label34" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label34" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=2057703553]
 layout_mode = 0
 offset_left = 132.112
 offset_top = 303.611
@@ -502,7 +502,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 5
 
-[node name="Label35" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label35" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1483990132]
 layout_mode = 0
 offset_left = 192.112
 offset_top = 303.611
@@ -515,7 +515,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 5
 
-[node name="Label36" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label36" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=2085405405]
 layout_mode = 0
 offset_left = 253.112
 offset_top = 303.611
@@ -528,7 +528,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 5
 
-[node name="Label37" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label37" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=421916931]
 layout_mode = 0
 offset_left = 315.112
 offset_top = 303.611
@@ -541,7 +541,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 5
 
-[node name="Label38" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label38" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=838758102]
 layout_mode = 0
 offset_left = 376.112
 offset_top = 304.611
@@ -554,7 +554,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 5
 
-[node name="Label39" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label39" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1379938353]
 layout_mode = 0
 offset_left = 438.112
 offset_top = 303.611
@@ -567,7 +567,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 5
 
-[node name="Label40" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label40" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=373971647]
 layout_mode = 0
 offset_left = 497.112
 offset_top = 303.611
@@ -580,7 +580,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 5
 
-[node name="Label41" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label41" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1964818633]
 layout_mode = 0
 offset_left = 71.1123
 offset_top = 361.611
@@ -593,7 +593,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 6
 
-[node name="Label42" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label42" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=985466218]
 layout_mode = 0
 offset_left = 132.112
 offset_top = 361.611
@@ -606,7 +606,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 6
 
-[node name="Label43" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label43" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=446652126]
 layout_mode = 0
 offset_left = 192.112
 offset_top = 361.611
@@ -619,7 +619,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 6
 
-[node name="Label44" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label44" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=734786407]
 layout_mode = 0
 offset_left = 253.112
 offset_top = 361.611
@@ -632,7 +632,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 6
 
-[node name="Label45" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label45" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1244383003]
 layout_mode = 0
 offset_left = 315.112
 offset_top = 361.611
@@ -645,7 +645,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 6
 
-[node name="Label46" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label46" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=358701997]
 layout_mode = 0
 offset_left = 376.112
 offset_top = 362.611
@@ -658,7 +658,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 6
 
-[node name="Label47" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label47" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1332794793]
 layout_mode = 0
 offset_left = 438.112
 offset_top = 361.611
@@ -671,7 +671,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 6
 
-[node name="Label48" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label48" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=155346696]
 layout_mode = 0
 offset_left = 497.112
 offset_top = 361.611
@@ -684,7 +684,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 6
 
-[node name="Label49" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label49" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=943115813]
 layout_mode = 0
 offset_left = 71.1123
 offset_top = 425.611
@@ -697,7 +697,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 7
 
-[node name="Label50" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label50" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=571953385]
 layout_mode = 0
 offset_left = 132.112
 offset_top = 425.611
@@ -710,7 +710,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 7
 
-[node name="Label51" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label51" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=474394245]
 layout_mode = 0
 offset_left = 192.112
 offset_top = 425.611
@@ -723,7 +723,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 7
 
-[node name="Label52" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label52" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1796827175]
 layout_mode = 0
 offset_left = 253.112
 offset_top = 425.611
@@ -736,7 +736,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 7
 
-[node name="Label53" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label53" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1222436276]
 layout_mode = 0
 offset_left = 315.112
 offset_top = 425.611
@@ -749,7 +749,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 7
 
-[node name="Label54" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label54" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=521447083]
 layout_mode = 0
 offset_left = 376.112
 offset_top = 426.611
@@ -762,7 +762,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 7
 
-[node name="Label55" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label55" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1038661484]
 layout_mode = 0
 offset_left = 438.112
 offset_top = 425.611
@@ -775,7 +775,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 7
 
-[node name="Label56" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label56" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=649486360]
 layout_mode = 0
 offset_left = 497.112
 offset_top = 425.611
@@ -788,7 +788,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 7
 
-[node name="Label57" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label57" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=937823034]
 layout_mode = 0
 offset_left = 71.1123
 offset_top = 482.611
@@ -801,7 +801,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 8
 
-[node name="Label58" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label58" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1178048536]
 layout_mode = 0
 offset_left = 132.112
 offset_top = 482.611
@@ -814,7 +814,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 8
 
-[node name="Label59" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label59" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1284204222]
 layout_mode = 0
 offset_left = 192.112
 offset_top = 482.611
@@ -827,7 +827,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 8
 
-[node name="Label60" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label60" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=1105640030]
 layout_mode = 0
 offset_left = 253.112
 offset_top = 482.611
@@ -840,7 +840,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 8
 
-[node name="Label61" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label61" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=517622725]
 layout_mode = 0
 offset_left = 315.112
 offset_top = 482.611
@@ -853,7 +853,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 8
 
-[node name="Label62" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label62" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=724183077]
 layout_mode = 0
 offset_left = 376.112
 offset_top = 483.611
@@ -866,7 +866,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 8
 
-[node name="Label63" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label63" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=835940486]
 layout_mode = 0
 offset_left = 438.112
 offset_top = 482.611
@@ -879,7 +879,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 8
 
-[node name="Label64" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control"]
+[node name="Label64" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control" unique_id=913405994]
 layout_mode = 0
 offset_left = 497.112
 offset_top = 482.611
@@ -892,14 +892,14 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 8
 
-[node name="VSeparator" type="VSeparator" parent="SubViewportContainer/SubViewport/HBoxContainer"]
+[node name="VSeparator" type="VSeparator" parent="SubViewportContainer/SubViewport/HBoxContainer" unique_id=2059027685]
 layout_mode = 2
 
-[node name="Control2" type="Control" parent="SubViewportContainer/SubViewport/HBoxContainer"]
+[node name="Control2" type="Control" parent="SubViewportContainer/SubViewport/HBoxContainer" unique_id=920792058]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=29971170]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -915,7 +915,7 @@ grow_vertical = 2
 texture = ExtResource("4_sfyqg")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=270348065]
 layout_mode = 0
 offset_left = 222.459
 offset_top = 178.481
@@ -931,7 +931,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 1
 
-[node name="Label2" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label2" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1454329912]
 layout_mode = 0
 offset_left = 259.878
 offset_top = 183.642
@@ -947,7 +947,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 1
 
-[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1103730219]
 layout_mode = 0
 offset_left = 298.839
 offset_top = 187.097
@@ -963,7 +963,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 1
 
-[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=713543610]
 layout_mode = 0
 offset_left = 338.839
 offset_top = 192.258
@@ -979,7 +979,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 1
 
-[node name="Label5" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label5" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=76414453]
 layout_mode = 0
 offset_left = 376.258
 offset_top = 196.129
@@ -995,7 +995,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 1
 
-[node name="Label6" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label6" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=382119183]
 layout_mode = 0
 offset_left = 417.548
 offset_top = 201.29
@@ -1011,7 +1011,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 1
 
-[node name="Label7" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label7" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1403921150]
 layout_mode = 0
 offset_left = 460.129
 offset_top = 205.161
@@ -1027,7 +1027,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 1
 
-[node name="Label8" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label8" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1756776956]
 layout_mode = 0
 offset_left = 504.0
 offset_top = 210.323
@@ -1043,7 +1043,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 1
 
-[node name="Label9" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label9" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1287976131]
 layout_mode = 0
 offset_left = 205.684
 offset_top = 201.707
@@ -1059,7 +1059,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 2
 
-[node name="Label10" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label10" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=433035029]
 layout_mode = 0
 offset_left = 248.265
 offset_top = 206.868
@@ -1075,7 +1075,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 2
 
-[node name="Label11" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label11" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=565590797]
 layout_mode = 0
 offset_left = 288.265
 offset_top = 212.029
@@ -1091,7 +1091,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 2
 
-[node name="Label12" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label12" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1949687604]
 layout_mode = 0
 offset_left = 328.265
 offset_top = 214.61
@@ -1107,7 +1107,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 2
 
-[node name="Label13" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label13" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1085961282]
 layout_mode = 0
 offset_left = 370.846
 offset_top = 219.771
@@ -1123,7 +1123,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 2
 
-[node name="Label14" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label14" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=2010186898]
 layout_mode = 0
 offset_left = 413.677
 offset_top = 225.806
@@ -1139,7 +1139,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 2
 
-[node name="Label15" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label15" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=190942898]
 layout_mode = 0
 offset_left = 456.258
 offset_top = 230.968
@@ -1155,7 +1155,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 2
 
-[node name="Label16" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label16" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=641066915]
 layout_mode = 0
 offset_left = 502.71
 offset_top = 234.839
@@ -1171,7 +1171,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 2
 
-[node name="Label17" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label17" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1915844846]
 layout_mode = 0
 offset_left = 188.91
 offset_top = 226.223
@@ -1187,7 +1187,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 3
 
-[node name="Label18" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label18" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1348980614]
 layout_mode = 0
 offset_left = 231.491
 offset_top = 230.094
@@ -1203,7 +1203,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 3
 
-[node name="Label19" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label19" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=769793823]
 layout_mode = 0
 offset_left = 274.071
 offset_top = 236.545
@@ -1219,7 +1219,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 3
 
-[node name="Label20" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label20" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1188723143]
 layout_mode = 0
 offset_left = 316.652
 offset_top = 241.707
@@ -1235,7 +1235,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 3
 
-[node name="Label21" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label21" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=37612743]
 layout_mode = 0
 offset_left = 361.813
 offset_top = 245.578
@@ -1251,7 +1251,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 3
 
-[node name="Label22" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label22" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1735907803]
 layout_mode = 0
 offset_left = 405.684
 offset_top = 252.029
@@ -1267,7 +1267,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 3
 
-[node name="Label23" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label23" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1504322261]
 layout_mode = 0
 offset_left = 452.136
 offset_top = 257.19
@@ -1283,7 +1283,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 3
 
-[node name="Label24" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label24" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1903775445]
 layout_mode = 0
 offset_left = 501.168
 offset_top = 262.352
@@ -1299,7 +1299,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 3
 
-[node name="Label25" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label25" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=251436362]
 layout_mode = 0
 offset_left = 169.806
 offset_top = 255.484
@@ -1315,7 +1315,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 4
 
-[node name="Label26" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label26" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=827188189]
 layout_mode = 0
 offset_left = 212.136
 offset_top = 259.771
@@ -1331,7 +1331,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 4
 
-[node name="Label27" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label27" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1957453430]
 layout_mode = 0
 offset_left = 259.878
 offset_top = 263.642
@@ -1347,7 +1347,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 4
 
-[node name="Label28" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label28" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1497675106]
 layout_mode = 0
 offset_left = 305.29
 offset_top = 269.677
@@ -1363,7 +1363,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 4
 
-[node name="Label29" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label29" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=2070501006]
 layout_mode = 0
 offset_left = 350.201
 offset_top = 276.545
@@ -1379,7 +1379,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 4
 
-[node name="Label30" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label30" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=2029207296]
 layout_mode = 0
 offset_left = 397.942
 offset_top = 282.997
@@ -1395,7 +1395,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 4
 
-[node name="Label31" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label31" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1612595945]
 layout_mode = 0
 offset_left = 449.555
 offset_top = 288.158
@@ -1411,7 +1411,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 4
 
-[node name="Label32" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label32" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=2051886339]
 layout_mode = 0
 offset_left = 498.588
 offset_top = 295.9
@@ -1427,7 +1427,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 4
 
-[node name="Label33" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label33" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=709454863]
 layout_mode = 0
 offset_left = 147.871
 offset_top = 285.161
@@ -1443,7 +1443,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 5
 
-[node name="Label34" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label34" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1465652998]
 layout_mode = 0
 offset_left = 194.071
 offset_top = 292.029
@@ -1459,7 +1459,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 5
 
-[node name="Label35" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label35" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=180495721]
 layout_mode = 0
 offset_left = 244.394
 offset_top = 295.9
@@ -1475,7 +1475,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 5
 
-[node name="Label36" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label36" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=356210931]
 layout_mode = 0
 offset_left = 290.846
 offset_top = 304.932
@@ -1491,7 +1491,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 5
 
-[node name="Label37" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label37" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1186066384]
 layout_mode = 0
 offset_left = 339.878
 offset_top = 310.094
@@ -1507,7 +1507,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 5
 
-[node name="Label38" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label38" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1407921415]
 layout_mode = 0
 offset_left = 392.781
 offset_top = 316.545
@@ -1523,7 +1523,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 5
 
-[node name="Label39" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label39" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1240190172]
 layout_mode = 0
 offset_left = 444.394
 offset_top = 325.578
@@ -1539,7 +1539,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 5
 
-[node name="Label40" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label40" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=2004408877]
 layout_mode = 0
 offset_left = 496.007
 offset_top = 330.739
@@ -1555,7 +1555,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 5
 
-[node name="Label41" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label41" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=418132651]
 layout_mode = 0
 offset_left = 125.935
 offset_top = 318.71
@@ -1571,7 +1571,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 6
 
-[node name="Label42" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label42" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1524906649]
 layout_mode = 0
 offset_left = 176.258
 offset_top = 325.161
@@ -1587,7 +1587,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 6
 
-[node name="Label43" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label43" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=637307089]
 layout_mode = 0
 offset_left = 225.039
 offset_top = 330.739
@@ -1603,7 +1603,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 6
 
-[node name="Label44" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label44" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=836264999]
 layout_mode = 0
 offset_left = 275.362
 offset_top = 339.771
@@ -1619,7 +1619,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 6
 
-[node name="Label45" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label45" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=370926044]
 layout_mode = 0
 offset_left = 329.806
 offset_top = 348.387
@@ -1635,7 +1635,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 6
 
-[node name="Label46" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label46" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1790434567]
 layout_mode = 0
 offset_left = 382.459
 offset_top = 356.545
@@ -1651,7 +1651,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 6
 
-[node name="Label47" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label47" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=2117446258]
 layout_mode = 0
 offset_left = 436.652
 offset_top = 362.997
@@ -1667,7 +1667,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 6
 
-[node name="Label48" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label48" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1949335011]
 layout_mode = 0
 offset_left = 496.007
 offset_top = 372.029
@@ -1683,7 +1683,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 6
 
-[node name="Label49" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label49" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=829624465]
 layout_mode = 0
 offset_left = 97.2972
 offset_top = 357.836
@@ -1699,7 +1699,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 7
 
-[node name="Label50" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label50" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=661175765]
 layout_mode = 0
 offset_left = 150.201
 offset_top = 366.868
@@ -1715,7 +1715,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 7
 
-[node name="Label51" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label51" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=398314526]
 layout_mode = 0
 offset_left = 203.355
 offset_top = 376.774
@@ -1731,7 +1731,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 7
 
-[node name="Label52" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label52" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=805879323]
 layout_mode = 0
 offset_left = 257.297
 offset_top = 384.932
@@ -1747,7 +1747,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 7
 
-[node name="Label53" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label53" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=111155757]
 layout_mode = 0
 offset_left = 314.072
 offset_top = 392.674
@@ -1763,7 +1763,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 7
 
-[node name="Label54" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label54" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=2039292614]
 layout_mode = 0
 offset_left = 370.846
 offset_top = 401.707
@@ -1779,7 +1779,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 7
 
-[node name="Label55" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label55" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1701733749]
 layout_mode = 0
 offset_left = 430.201
 offset_top = 409.449
@@ -1795,7 +1795,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 7
 
-[node name="Label56" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label56" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1587423424]
 layout_mode = 0
 offset_left = 490.846
 offset_top = 418.481
@@ -1811,7 +1811,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 7
 
-[node name="Label57" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label57" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1867637702]
 layout_mode = 0
 offset_left = 66.5807
 offset_top = 403.871
@@ -1827,7 +1827,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 1
 y_coordinate = 8
 
-[node name="Label58" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label58" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1567687146]
 layout_mode = 0
 offset_left = 122.065
 offset_top = 414.194
@@ -1843,7 +1843,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 2
 y_coordinate = 8
 
-[node name="Label59" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label59" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1684975994]
 layout_mode = 0
 offset_left = 179.878
 offset_top = 421.061
@@ -1859,7 +1859,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 3
 y_coordinate = 8
 
-[node name="Label60" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label60" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1810399828]
 layout_mode = 0
 offset_left = 236.903
 offset_top = 433.548
@@ -1875,7 +1875,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 4
 y_coordinate = 8
 
-[node name="Label61" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label61" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=781527338]
 layout_mode = 0
 offset_left = 294.717
 offset_top = 445.578
@@ -1891,7 +1891,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 5
 y_coordinate = 8
 
-[node name="Label62" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label62" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=983459120]
 layout_mode = 0
 offset_left = 354.363
 offset_top = 453.444
@@ -1907,7 +1907,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 6
 y_coordinate = 8
 
-[node name="Label63" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label63" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=1121428892]
 layout_mode = 0
 offset_left = 421.419
 offset_top = 467.097
@@ -1923,7 +1923,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 7
 y_coordinate = 8
 
-[node name="Label64" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2"]
+[node name="Label64" type="Label" parent="SubViewportContainer/SubViewport/HBoxContainer/Control2" unique_id=901463462]
 layout_mode = 0
 offset_left = 488.516
 offset_top = 476.129
@@ -1939,7 +1939,7 @@ script = ExtResource("2_73ekl")
 x_coordinate = 8
 y_coordinate = 8
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1818351163]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -1951,12 +1951,12 @@ offset_top = -66.0
 grow_horizontal = 0
 grow_vertical = 0
 
-[node name="Save" type="Button" parent="VBoxContainer"]
+[node name="Save" type="Button" parent="VBoxContainer" unique_id=434882261]
 layout_mode = 2
 tooltip_text = "Saves image to standard picture folder"
 text = "Save Image"
 
-[node name="Copy" type="Button" parent="VBoxContainer"]
+[node name="Copy" type="Button" parent="VBoxContainer" unique_id=1681160614]
 layout_mode = 2
 tooltip_text = "Feature currently not available"
 text = "Copy Image"

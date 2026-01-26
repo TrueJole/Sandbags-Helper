@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dkl2sj4chabhn"]
+[gd_scene format=3 uid="uid://dkl2sj4chabhn"]
 
 [ext_resource type="Script" uid="uid://lysyejlw8nke" path="res://Scripts/button.gd" id="1_nhor4"]
 
-[node name="Button" type="Button"]
+[node name="Button" type="Button" unique_id=658128825]
 z_index = 1
 offset_right = 20.0
 offset_bottom = 20.0
@@ -12,7 +12,7 @@ script = ExtResource("1_nhor4")
 standard_color = Color(0.917647, 0.6, 0.6, 0.611765)
 sandbag_color = Color(0, 0.636506, 0.392078, 0.611765)
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=138273793]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
