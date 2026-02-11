@@ -1,3 +1,3 @@
 # Sandbag-Helper
 A tool to help with the sandbags of the 'A Conflict' dog tag in Battlefield 1.
-Hosted on: https://truejole.github.io/
+Hosted on: https://truejole.github.io/sandbag-helper/
