@@ -6,4 +6,5 @@ bg_color = Color(0, 0, 0, 1)
 [resource]
 ArrowButton/base_type = &"Button"
 ArrowButton/font_sizes/font_size = 30
+Button/font_sizes/font_size = 20
 Panel/styles/panel = SubResource("StyleBoxFlat_abrne")
