@@ -17,8 +17,8 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -25.0
-offset_right = 25.0
+offset_left = 11.0
+offset_right = 61.0
 grow_horizontal = 2
 
 [node name="CountLabel" type="Label" parent="." unique_id=1290856898]
