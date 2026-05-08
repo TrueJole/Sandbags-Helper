@@ -1,0 +1,4 @@
+In Engine -> Enigine Compilation Configuration Editor -> Auto detect
+Copy resulting .gdbuild to godot source directory
+Execute :
+scons target=template_release production=yes optimisation=size_extra -j6 platform=web lto=full build_profile=minimal_profile.gdbuild threads=no
