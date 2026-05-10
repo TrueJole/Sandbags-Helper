@@ -14,8 +14,14 @@ config/name="Sandbags Helper"
 config/version="0.9"
 run/main_scene="uid://dupyccnutupbc"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+run/low_processor_mode=true
+boot_splash/stretch_mode=0
 boot_splash/image="uid://c5ouqwbjs1qnj"
 config/icon="uid://c5ouqwbjs1qnj"
+
+[autoload]
+
+AutoUpdate="*uid://b1g22o0hs3uc3"
 
 [display]
 
