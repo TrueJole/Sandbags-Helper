@@ -27,7 +27,7 @@ var copyText: Array[Array] = [
 	["""LOOK I have spent HOURS trying to get 
 	this copy feature to work. But I have failed.
 	Instead, I decided to put in this little easter egg.
-	How ironic. Next time your annoyed that you have
+	How ironic. Next time you're annoyed that you have
 	to drag and drop the downloaded image into the
 	Discord, think about this instead.
 	I apologize.""", 30],

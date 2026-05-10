@@ -53,19 +53,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 bbcode_enabled = true
-text = "[b]How to use[/b]
-Select the 12 squares that have sandbags on them, then click \"Grid\" to view which tiles have to be lit up
-
-[b]Contact[/b]
-Discord: jole.k
-Github: TrueJole
-Color grid by kevinsalsa.
-
-Version: 0.9
-
-This tool has a Github repository, consider contributing.
-
-Powered by Godot."
 script = SubResource("GDScript_i3s3k")
 metadata/_edit_use_anchors_ = true
 
