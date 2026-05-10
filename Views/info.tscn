@@ -1,6 +1,28 @@
 [gd_scene format=3 uid="uid://dw08ckf4pv3ya"]
 
-[ext_resource type="Script" uid="uid://cglrxnaubjin" path="res://Views/info.gd" id="1_i3s3k"]
+[ext_resource type="Script" uid="uid://cglrxnaubjin" path="res://Scripts/info.gd" id="1_i3s3k"]
+
+[sub_resource type="GDScript" id="GDScript_i3s3k"]
+resource_name = "Infotext"
+script/source = "extends RichTextLabel
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	text = \"\"\"[b]How to use[/b]
+Select the 12 squares that have sandbags on them, then click \"Grid\" to view which tiles have to be lit up
+
+[b]Contact[/b]
+Discord: jole.k
+Github: TrueJole
+Color grid by kevinsalsa.
+
+Version: %s
+
+This tool has a Github repository, consider contributing.
+
+Powered by Godot.\"\"\" %  ProjectSettings.get_setting(\"application/config/version\") 
+"
 
 [node name="Info" type="Control" unique_id=377241643]
 z_index = 10
@@ -31,19 +53,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 bbcode_enabled = true
-text = "[b]How to use[/b]
-Select the 12 squares that have sandbags on them, then click \"Grid\" to view which tiles have to be lit up
-
-[b]Contact[/b]
-Discord: jole.k
-Github: TrueJole
-Color grid by kevinsalsa.
-
-Version: 0.7.1
-
-This tool has a Github repository, consider contributing.
-
-Powered by Godot."
+script = SubResource("GDScript_i3s3k")
 metadata/_edit_use_anchors_ = true
 
 [node name="Back" type="Button" parent="." unique_id=1527135103]
@@ -51,8 +61,8 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -8.0
-offset_bottom = 8.0
+offset_left = -55.0
+offset_bottom = 40.0
 grow_horizontal = 0
 text = "Back
 "

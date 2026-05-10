@@ -46,6 +46,12 @@ func _ready() -> void:
 		array.resize(8)
 	direction = 0
 
+func _input(event: InputEvent) -> void:
+	if event.is_action_released("ui_left"):
+		_on_left_button_up()
+	if event.is_action_released("ui_right"):
+		_on_right_button_up()
+
 func _on_left_button_up() -> void:
 	$DirectionCompass.turnLeft()
 	direction -= 1
