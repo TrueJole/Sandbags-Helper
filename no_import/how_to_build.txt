@@ -1,4 +1,5 @@
 In Engine -> Enigine Compilation Configuration Editor -> Auto detect
+(4.6.2 Check for ProjectSettings in .gdbuild and remove)
 Copy resulting .gdbuild to godot source directory
 Execute :
 scons target=template_release production=yes optimisation=size_extra -j6 platform=web lto=full build_profile=minimal_profile.gdbuild threads=no
