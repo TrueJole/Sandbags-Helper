@@ -7,6 +7,8 @@ const WN = preload("res://Views/WN.tscn")
 const GRID = preload("res://Views/grid.tscn")
 const INFO = preload("res://Views/info.tscn")
 
+const SESSION_FILENAME: String = "user://session.json"
+
 var direction: int:
 	set(value):
 		direction = value
@@ -37,14 +39,35 @@ var count: int:
 	set(value):
 		count = value
 		$CountLabel.text = str(count) + "/12"
+		save_session()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	load_last_session()
+	direction = 0
+
+func load_last_session():
 	count = 0
 	sandbags.resize(8)
 	for array: Array[int] in sandbags:
 		array.resize(8)
-	direction = 0
+	var file: FileAccess = FileAccess.open(SESSION_FILENAME, FileAccess.READ)
+	if FileAccess.file_exists(SESSION_FILENAME):
+		var session: Dictionary = JSON.to_native(JSON.parse_string(file.get_as_text()))
+		print(session)
+		if session["sandbags"]:
+			sandbags = session["sandbags"] 
+		count = session["count"]
+		print("Loaded session")
+	else:
+		print("No session found")
+
+func save_session():
+	if sandbags:
+		var file: FileAccess = FileAccess.open(SESSION_FILENAME, FileAccess.WRITE)
+		var session: Dictionary = {"sandbags": sandbags, "count": count}
+		file.store_string(JSON.stringify(JSON.from_native(session)))
+		print("Saving session")
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_released("ui_left"):
