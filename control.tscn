@@ -89,6 +89,11 @@ layout_mode = 2
 toggle_mode = true
 text = "Show Grid"
 
+[node name="Fullscreen" type="Button" parent="HBoxContainer" unique_id=514562272]
+layout_mode = 2
+toggle_mode = true
+text = "Fullscreen"
+
 [connection signal="button_up" from="Left" to="." method="_on_left_button_up"]
 [connection signal="button_up" from="Right" to="." method="_on_right_button_up"]
 [connection signal="button_up" from="Reset" to="." method="_on_button_button_up"]
@@ -96,3 +101,4 @@ text = "Show Grid"
 [connection signal="pressed" from="HBoxContainer/Info" to="." method="_on_info_pressed"]
 [connection signal="toggled" from="HBoxContainer/Info" to="." method="_on_info_toggled"]
 [connection signal="toggled" from="HBoxContainer/Grid" to="." method="_on_grid_toggled"]
+[connection signal="toggled" from="HBoxContainer/Fullscreen" to="." method="_on_fullscreen_toggled"]

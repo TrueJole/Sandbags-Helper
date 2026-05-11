@@ -88,3 +88,6 @@ func _on_grid_toggled(toggled_on: bool) -> void:
 func _on_info_pressed() -> void:
 	var temp = INFO.instantiate()
 	add_child(temp)
+
+func _on_fullscreen_toggled(toggled_on: bool) -> void:
+	get_viewport().get_window().mode = Window.MODE_FULLSCREEN if toggled_on else Window.MODE_WINDOWED
