@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dxm0s5lle1045" path="res://Scripts/Sandbags.gd" id="1_0fbet"]
 [ext_resource type="PackedScene" uid="uid://coxfe3exh2sh3" path="res://DirectionCompass.tscn" id="2_62e2m"]
+[ext_resource type="FontFile" uid="uid://cxyynujig13hy" path="res://MIRIAMMONOCLM-BOLD.TTF" id="3_qtu10"]
 
 [node name="Control" type="Control" unique_id=1125203784]
 layout_mode = 3
@@ -32,7 +33,9 @@ offset_right = 1.0
 grow_vertical = 0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_qtu10")
 theme_override_font_sizes/font_size = 50
+text = "0/12"
 
 [node name="Left" type="Button" parent="." unique_id=163335923]
 z_index = 2
