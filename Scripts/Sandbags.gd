@@ -55,8 +55,10 @@ func load_last_session():
 	if FileAccess.file_exists(SESSION_FILENAME):
 		var session: Dictionary = JSON.to_native(JSON.parse_string(file.get_as_text()))
 		print(session)
-		if session["sandbags"]:
+		if session["sandbags"] and session["sandbags"].size() == 8 and session["sandbags"][0].size() == 8:
 			sandbags = session["sandbags"] 
+		else:
+			print("Invalid session!")
 		count = session["count"]
 		print("Loaded session")
 	else:
