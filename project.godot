@@ -22,10 +22,12 @@ config/icon="uid://c5ouqwbjs1qnj"
 [autoload]
 
 AutoUpdate="*uid://b1g22o0hs3uc3"
+AutoSize="*uid://dpn3cs1tuf7tn"
 
 [display]
 
 window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_height"
 
 [gui]
 
