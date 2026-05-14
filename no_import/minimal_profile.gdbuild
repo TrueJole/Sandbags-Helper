@@ -302,7 +302,6 @@
 		"TextureButton",
 		"TextureLayered",
 		"ThemeContext",
-		"ThemeDB",
 		"Thread",
 		"TileData",
 		"TileMapPattern",
