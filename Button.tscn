@@ -4,6 +4,7 @@
 
 [node name="Button" type="Button" unique_id=658128825]
 z_index = 1
+custom_minimum_size = Vector2(30, 30)
 offset_right = 20.0
 offset_bottom = 20.0
 toggle_mode = true

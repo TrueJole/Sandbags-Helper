@@ -22,49 +22,47 @@ offset_left = 11.0
 offset_right = 61.0
 grow_horizontal = 2
 
-[node name="CountLabel" type="Label" parent="." unique_id=1290856898]
-z_index = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1258406693]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -69.0
-offset_right = 1.0
+offset_top = -160.0
+offset_right = 120.0
 grow_vertical = 0
+
+[node name="CountLabel" type="Label" parent="VBoxContainer" unique_id=1290856898]
+unique_name_in_owner = true
+z_index = 2
+layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_qtu10")
 theme_override_font_sizes/font_size = 50
 text = "0/12"
 
-[node name="Left" type="Button" parent="." unique_id=163335923]
+[node name="Left" type="Button" parent="VBoxContainer" unique_id=163335923]
+unique_name_in_owner = true
 z_index = 2
-custom_minimum_size = Vector2(40, 100)
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -15.5
-offset_right = 18.0
-offset_bottom = 15.5
-grow_vertical = 2
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
 theme_type_variation = &"ArrowButton"
 text = "<"
 
 [node name="Right" type="Button" parent="." unique_id=482551219]
+unique_name_in_owner = true
 z_index = 2
-custom_minimum_size = Vector2(40, 100)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 1
-anchors_preset = 6
+anchors_preset = 3
 anchor_left = 1.0
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -18.0
-offset_top = -15.5
-offset_bottom = 15.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -100.0
 grow_horizontal = 0
-grow_vertical = 2
+grow_vertical = 0
 theme_type_variation = &"ArrowButton"
 text = ">"
 
@@ -97,7 +95,7 @@ layout_mode = 2
 toggle_mode = true
 text = "Fullscreen"
 
-[connection signal="button_up" from="Left" to="." method="_on_left_button_up"]
+[connection signal="button_up" from="VBoxContainer/Left" to="." method="_on_left_button_up"]
 [connection signal="button_up" from="Right" to="." method="_on_right_button_up"]
 [connection signal="button_up" from="Reset" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="Reset" to="." method="_on_reset_button_up"]

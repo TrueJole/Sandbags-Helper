@@ -22,8 +22,8 @@ var direction: int:
 		view = views[direction].instantiate()
 		add_child(view)
 		move_child(view, 0)
-		$Left.visible = true
-		$Right.visible = true
+		%Left.visible = true
+		%Right.visible = true
 		$DirectionCompass.visible = true
 
 var sandbags: Array[Array]
@@ -38,7 +38,7 @@ var view: Node
 var count: int:
 	set(value):
 		count = value
-		$CountLabel.text = str(count) + "/12"
+		%CountLabel.text = str(count) + "/12"
 		save_session()
 
 # Called when the node enters the scene tree for the first time.
@@ -95,8 +95,8 @@ func _on_reset_button_up() -> void:
 
 func _on_grid_toggled(toggled_on: bool) -> void:
 	print('Grid Visibility:', toggled_on)
-	$Left.visible = not toggled_on
-	$Right.visible = not toggled_on
+	%Left.visible = not toggled_on
+	%Right.visible = not toggled_on
 	$DirectionCompass.visible = not toggled_on
 	if toggled_on:
 		view.queue_free()

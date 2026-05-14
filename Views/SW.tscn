@@ -45,10 +45,10 @@ standard_color = Color(1, 1, 0, 0.611765)
 
 [node name="Button10" parent="." unique_id=836556220 instance=ExtResource("2_3qmck")]
 layout_mode = 0
-offset_left = 215.0
+offset_left = 227.0
 offset_top = 358.0
 offset_right = 554.0
-offset_bottom = 378.0
+offset_bottom = 388.0
 x_coordinate = 5
 y_coordinate = 6
 standard_color = Color(1, 1, 0, 0.611765)
