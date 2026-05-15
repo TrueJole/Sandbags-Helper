@@ -10,7 +10,7 @@ script/source = "extends RichTextLabel
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	text = \"\"\"[b]How to use[/b]
-Select the 12 squares that have sandbags on them, then click \"Grid\" to view which tiles have to be lit up
+Select the 12 squares that have sandbags on them, then click \"Grid\" to view which tiles have to be lit up.
 
 [b]Contact[/b]
 Discord: jole.k
@@ -19,9 +19,14 @@ Color grid by kevinsalsa.
 
 Version: %s
 
-This tool has a Github repository, consider contributing.
+This tool has a [url=https://github.com/TrueJole/Sandbags-Helper]Github repository[/url], consider contributing.
 
 Powered by Godot.\"\"\" %  ProjectSettings.get_setting(\"application/config/version\") 
+
+
+func _on_meta_clicked(meta: Variant) -> void:
+	print(meta)
+	OS.shell_open(str(meta))
 "
 
 [node name="Info" type="Control" unique_id=377241643]
@@ -51,7 +56,6 @@ anchor_right = 1.07899
 anchor_bottom = 1.07716
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 bbcode_enabled = true
 script = SubResource("GDScript_i3s3k")
 metadata/_edit_use_anchors_ = true
@@ -67,4 +71,5 @@ grow_horizontal = 0
 text = "Back
 "
 
+[connection signal="meta_clicked" from="RichTextLabel" to="RichTextLabel" method="_on_meta_clicked"]
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

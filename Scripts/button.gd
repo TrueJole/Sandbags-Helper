@@ -9,7 +9,7 @@ extends Button
 func _ready() -> void:
 	# check if sandbag is located here
 	# subtract one to convert to 0 indexed
-	if get_parent().get_parent().sandbags[x_coordinate-1][y_coordinate-1]:
+	if get_parent().get_parent().get_parent().sandbags[x_coordinate-1][y_coordinate-1]:
 		set_pressed_no_signal(true)
 		$ColorRect.color = sandbag_color
 	else:
@@ -19,10 +19,10 @@ func _ready() -> void:
 
 func _on_toggled(toggled_on: bool) -> void:
 	print('Toggled:', button_pressed)
-	get_parent().get_parent().sandbags[x_coordinate-1][y_coordinate-1] = toggled_on
+	get_parent().get_parent().get_parent().sandbags[x_coordinate-1][y_coordinate-1] = toggled_on
 	if toggled_on:
 		$ColorRect.color = sandbag_color
-		get_parent().get_parent().count += 1
+		get_parent().get_parent().get_parent().count += 1
 	else:
 		$ColorRect.color = standard_color
-		get_parent().get_parent().count -= 1
+		get_parent().get_parent().get_parent().count -= 1

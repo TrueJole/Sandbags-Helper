@@ -3,18 +3,27 @@
 [ext_resource type="Texture2D" uid="uid://j7rrjwcktc0t" path="res://Assets/SW.png" id="1_i4n8e"]
 [ext_resource type="PackedScene" uid="uid://dkl2sj4chabhn" path="res://Button.tscn" id="2_3qmck"]
 
-[node name="SW" type="Control" unique_id=1988492173]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="SW" type="SubViewportContainer" unique_id=174851285]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=177248736]
-layout_mode = 1
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1957003119]
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="TextureRect" type="TextureRect" parent="SubViewport" unique_id=177248736]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -23,194 +32,174 @@ grow_vertical = 2
 texture = ExtResource("1_i4n8e")
 expand_mode = 1
 
-[node name="Button2" parent="." unique_id=1085057552 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 195.0
-offset_top = 408.0
-offset_right = 215.0
-offset_bottom = 428.0
+[node name="Button2" parent="SubViewport" unique_id=1085057552 instance=ExtResource("2_3qmck")]
+offset_left = 118.0
+offset_top = 397.0
+offset_right = 148.0
+offset_bottom = 427.0
 x_coordinate = 5
 y_coordinate = 5
 standard_color = Color(0.713726, 0.843137, 0.658824, 0.611765)
 
-[node name="Button7" parent="." unique_id=2041071065 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 176.0
-offset_top = 363.0
-offset_right = 196.0
-offset_bottom = 383.0
+[node name="Button7" parent="SubViewport" unique_id=2041071065 instance=ExtResource("2_3qmck")]
+offset_left = 88.0
+offset_top = 341.0
+offset_right = 118.0
+offset_bottom = 371.0
 x_coordinate = 6
 y_coordinate = 6
 standard_color = Color(1, 1, 0, 0.611765)
 
-[node name="Button10" parent="." unique_id=836556220 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 215.0
-offset_top = 358.0
-offset_right = 554.0
-offset_bottom = 378.0
+[node name="Button10" parent="SubViewport" unique_id=836556220 instance=ExtResource("2_3qmck")]
+offset_left = 135.0
+offset_top = 339.0
+offset_right = 564.0
+offset_bottom = 369.0
 x_coordinate = 5
 y_coordinate = 6
 standard_color = Color(1, 1, 0, 0.611765)
 
-[node name="Button12" parent="." unique_id=531239843 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 202.0
-offset_top = 309.0
-offset_right = 362.0
-offset_bottom = 329.0
+[node name="Button12" parent="SubViewport" unique_id=531239843 instance=ExtResource("2_3qmck")]
+offset_left = 117.0
+offset_top = 282.0
+offset_right = 329.0
+offset_bottom = 312.0
 x_coordinate = 6
 y_coordinate = 7
 standard_color = Color(0.964706, 0.698039, 0.419608, 0.611765)
 
-[node name="Button16" parent="." unique_id=1470655028 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 173.0
-offset_top = 272.0
-offset_right = 296.0
-offset_bottom = 292.0
+[node name="Button16" parent="SubViewport" unique_id=1470655028 instance=ExtResource("2_3qmck")]
+offset_left = 93.0
+offset_top = 232.0
+offset_right = 262.0
+offset_bottom = 262.0
 x_coordinate = 7
 y_coordinate = 8
 
-[node name="Button17" parent="." unique_id=981601655 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 302.0
-offset_top = 272.0
-offset_right = 426.0
-offset_bottom = 292.0
+[node name="Button17" parent="SubViewport" unique_id=981601655 instance=ExtResource("2_3qmck")]
+offset_left = 275.0
+offset_top = 230.0
+offset_right = 409.0
+offset_bottom = 260.0
 x_coordinate = 6
 y_coordinate = 8
 
-[node name="Button18" parent="." unique_id=1843581871 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 435.0
-offset_top = 269.0
+[node name="Button18" parent="SubViewport" unique_id=1843581871 instance=ExtResource("2_3qmck")]
+offset_left = 425.0
+offset_top = 228.0
 offset_right = 562.0
-offset_bottom = 289.0
+offset_bottom = 258.0
 x_coordinate = 5
 y_coordinate = 8
 
-[node name="Button19" parent="." unique_id=1332852033 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 585.0
-offset_top = 265.0
-offset_right = 708.0
-offset_bottom = 285.0
+[node name="Button19" parent="SubViewport" unique_id=1332852033 instance=ExtResource("2_3qmck")]
+offset_left = 608.0
+offset_top = 225.0
+offset_right = 763.0
+offset_bottom = 255.0
 x_coordinate = 4
 y_coordinate = 8
 
-[node name="Button20" parent="." unique_id=1712706147 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 711.0
-offset_top = 265.0
-offset_right = 836.0
-offset_bottom = 285.0
+[node name="Button20" parent="SubViewport" unique_id=1712706147 instance=ExtResource("2_3qmck")]
+offset_left = 779.0
+offset_top = 222.0
+offset_right = 917.0
+offset_bottom = 252.0
 x_coordinate = 3
 y_coordinate = 8
 
-[node name="Button21" parent="." unique_id=67923152 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 843.0
-offset_top = 263.0
-offset_right = 966.0
-offset_bottom = 283.0
+[node name="Button21" parent="SubViewport" unique_id=67923152 instance=ExtResource("2_3qmck")]
+offset_left = 931.0
+offset_top = 223.0
+offset_right = 1063.0
+offset_bottom = 253.0
 x_coordinate = 2
 y_coordinate = 8
 
-[node name="Button13" parent="." unique_id=632130608 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 371.0
-offset_top = 310.0
-offset_right = 554.0
-offset_bottom = 330.0
+[node name="Button13" parent="SubViewport" unique_id=632130608 instance=ExtResource("2_3qmck")]
+offset_left = 342.0
+offset_top = 278.0
+offset_right = 562.0
+offset_bottom = 308.0
 x_coordinate = 5
 y_coordinate = 7
 standard_color = Color(0.964706, 0.698039, 0.419608, 0.611765)
 
-[node name="Button14" parent="." unique_id=412061060 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 586.0
-offset_top = 307.0
-offset_right = 759.0
-offset_bottom = 327.0
+[node name="Button14" parent="SubViewport" unique_id=412061060 instance=ExtResource("2_3qmck")]
+offset_left = 608.0
+offset_top = 275.0
+offset_right = 830.0
+offset_bottom = 305.0
 x_coordinate = 4
 y_coordinate = 7
 standard_color = Color(0.964706, 0.698039, 0.419608, 0.611765)
 
-[node name="Button15" parent="." unique_id=1462202299 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 770.0
-offset_top = 306.0
-offset_right = 951.0
-offset_bottom = 326.0
+[node name="Button15" parent="SubViewport" unique_id=1462202299 instance=ExtResource("2_3qmck")]
+offset_left = 841.0
+offset_top = 272.0
+offset_right = 1041.0
+offset_bottom = 302.0
 x_coordinate = 3
 y_coordinate = 7
 standard_color = Color(0.964706, 0.698039, 0.419608, 0.611765)
 
-[node name="Button11" parent="." unique_id=499873913 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 590.0
-offset_top = 353.0
-offset_right = 916.0
-offset_bottom = 373.0
+[node name="Button11" parent="SubViewport" unique_id=499873913 instance=ExtResource("2_3qmck")]
+offset_left = 609.0
+offset_top = 330.0
+offset_right = 1018.0
+offset_bottom = 360.0
 x_coordinate = 4
 y_coordinate = 6
 standard_color = Color(1, 1, 0, 0.611765)
 
-[node name="Button8" parent="." unique_id=1148164042 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 159.0
-offset_top = 314.0
-offset_right = 179.0
-offset_bottom = 334.0
+[node name="Button8" parent="SubViewport" unique_id=1148164042 instance=ExtResource("2_3qmck")]
+offset_left = 74.0
+offset_top = 285.0
+offset_right = 104.0
+offset_bottom = 315.0
 x_coordinate = 7
 y_coordinate = 7
 standard_color = Color(0.964706, 0.698039, 0.419608, 0.611765)
 
-[node name="Button9" parent="." unique_id=1769559680 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 137.0
-offset_top = 271.0
-offset_right = 157.0
-offset_bottom = 291.0
+[node name="Button9" parent="SubViewport" unique_id=1769559680 instance=ExtResource("2_3qmck")]
+offset_left = 49.0
+offset_top = 231.0
+offset_right = 79.0
+offset_bottom = 261.0
 x_coordinate = 8
 y_coordinate = 8
 
-[node name="Button3" parent="." unique_id=1335487561 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 933.0
-offset_top = 397.0
-offset_right = 953.0
-offset_bottom = 417.0
+[node name="Button3" parent="SubViewport" unique_id=1335487561 instance=ExtResource("2_3qmck")]
+offset_left = 1020.0
+offset_top = 386.0
+offset_right = 1050.0
+offset_bottom = 416.0
 x_coordinate = 4
 y_coordinate = 5
 standard_color = Color(0.713726, 0.843137, 0.658824, 0.611765)
 
-[node name="Button4" parent="." unique_id=745614014 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 945.0
-offset_top = 347.0
-offset_right = 965.0
-offset_bottom = 367.0
+[node name="Button4" parent="SubViewport" unique_id=745614014 instance=ExtResource("2_3qmck")]
+offset_left = 1041.0
+offset_top = 334.0
+offset_right = 1071.0
+offset_bottom = 364.0
 x_coordinate = 3
 y_coordinate = 6
 standard_color = Color(1, 1, 0, 0.611765)
 
-[node name="Button5" parent="." unique_id=1772700065 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 965.0
-offset_top = 304.0
-offset_right = 985.0
-offset_bottom = 324.0
+[node name="Button5" parent="SubViewport" unique_id=1772700065 instance=ExtResource("2_3qmck")]
+offset_left = 1059.0
+offset_top = 270.0
+offset_right = 1089.0
+offset_bottom = 300.0
 x_coordinate = 2
 y_coordinate = 7
 standard_color = Color(0.964706, 0.698039, 0.419608, 0.611765)
 
-[node name="Button6" parent="." unique_id=692626867 instance=ExtResource("2_3qmck")]
-layout_mode = 0
-offset_left = 979.0
-offset_top = 265.0
-offset_right = 999.0
-offset_bottom = 285.0
+[node name="Button6" parent="SubViewport" unique_id=692626867 instance=ExtResource("2_3qmck")]
+offset_left = 1080.0
+offset_top = 220.0
+offset_right = 1110.0
+offset_bottom = 250.0
 x_coordinate = 1
 y_coordinate = 8

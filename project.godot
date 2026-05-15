@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Sandbags Helper"
-config/version="0.9"
+config/version="0.10"
 run/main_scene="uid://dupyccnutupbc"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 run/low_processor_mode=true
@@ -22,10 +22,12 @@ config/icon="uid://c5ouqwbjs1qnj"
 [autoload]
 
 AutoUpdate="*uid://b1g22o0hs3uc3"
+AutoSize="*uid://dpn3cs1tuf7tn"
 
 [display]
 
 window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_height"
 
 [gui]
 

@@ -7,6 +7,8 @@ const WN = preload("res://Views/WN.tscn")
 const GRID = preload("res://Views/grid.tscn")
 const INFO = preload("res://Views/info.tscn")
 
+const SESSION_FILENAME: String = "user://session.json"
+
 var direction: int:
 	set(value):
 		direction = value
@@ -20,8 +22,8 @@ var direction: int:
 		view = views[direction].instantiate()
 		add_child(view)
 		move_child(view, 0)
-		$Left.visible = true
-		$Right.visible = true
+		%Left.visible = true
+		%Right.visible = true
 		$DirectionCompass.visible = true
 
 var sandbags: Array[Array]
@@ -36,15 +38,38 @@ var view: Node
 var count: int:
 	set(value):
 		count = value
-		$CountLabel.text = str(count) + "/12"
+		%CountLabel.text = str(count) + "/12"
+		save_session()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	load_last_session()
+	direction = 0
+
+func load_last_session():
 	count = 0
 	sandbags.resize(8)
 	for array: Array[int] in sandbags:
 		array.resize(8)
-	direction = 0
+	var file: FileAccess = FileAccess.open(SESSION_FILENAME, FileAccess.READ)
+	if FileAccess.file_exists(SESSION_FILENAME):
+		var session: Dictionary = JSON.to_native(JSON.parse_string(file.get_as_text()))
+		print(session)
+		if session["sandbags"] and session["sandbags"].size() == 8 and session["sandbags"][0].size() == 8:
+			sandbags = session["sandbags"] 
+		else:
+			print("Invalid session!")
+		count = session["count"]
+		print("Loaded session")
+	else:
+		print("No session found")
+
+func save_session():
+	if sandbags:
+		var file: FileAccess = FileAccess.open(SESSION_FILENAME, FileAccess.WRITE)
+		var session: Dictionary = {"sandbags": sandbags, "count": count}
+		file.store_string(JSON.stringify(JSON.from_native(session)))
+		print("Saving session")
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_released("ui_left"):
@@ -72,8 +97,8 @@ func _on_reset_button_up() -> void:
 
 func _on_grid_toggled(toggled_on: bool) -> void:
 	print('Grid Visibility:', toggled_on)
-	$Left.visible = not toggled_on
-	$Right.visible = not toggled_on
+	%Left.visible = not toggled_on
+	%Right.visible = not toggled_on
 	$DirectionCompass.visible = not toggled_on
 	if toggled_on:
 		view.queue_free()
@@ -88,3 +113,6 @@ func _on_grid_toggled(toggled_on: bool) -> void:
 func _on_info_pressed() -> void:
 	var temp = INFO.instantiate()
 	add_child(temp)
+
+func _on_fullscreen_toggled(toggled_on: bool) -> void:
+	get_viewport().get_window().mode = Window.MODE_FULLSCREEN if toggled_on else Window.MODE_WINDOWED

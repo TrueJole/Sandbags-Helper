@@ -21,11 +21,11 @@ func turnRight() -> void:
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_parallel(true)
 	
-	tween.tween_property(self, "rotation", rotation + deg_to_rad(90), DURATION)
-	tween.tween_property(n_label, "rotation", n_label.rotation - deg_to_rad(90), DURATION)
-	tween.tween_property(e_label, "rotation", e_label.rotation - deg_to_rad(90), DURATION)
-	tween.tween_property(s_label, "rotation", s_label.rotation - deg_to_rad(90), DURATION)
-	tween.tween_property(w_label, "rotation", w_label.rotation - deg_to_rad(90), DURATION)
+	tween.tween_property(self, "rotation", rotation - deg_to_rad(90), DURATION)
+	tween.tween_property(n_label, "rotation", n_label.rotation + deg_to_rad(90), DURATION)
+	tween.tween_property(e_label, "rotation", e_label.rotation + deg_to_rad(90), DURATION)
+	tween.tween_property(s_label, "rotation", s_label.rotation + deg_to_rad(90), DURATION)
+	tween.tween_property(w_label, "rotation", w_label.rotation +  deg_to_rad(90), DURATION)
 
 func turnLeft() -> void:
 	# fininish rotating
@@ -36,8 +36,8 @@ func turnLeft() -> void:
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_parallel(true)
 	
-	tween.tween_property(self, "rotation", rotation - deg_to_rad(90), DURATION)
-	tween.tween_property(n_label, "rotation", n_label.rotation + deg_to_rad(90), DURATION)
-	tween.tween_property(e_label, "rotation", e_label.rotation + deg_to_rad(90), DURATION)
-	tween.tween_property(s_label, "rotation", s_label.rotation + deg_to_rad(90), DURATION)
-	tween.tween_property(w_label, "rotation", w_label.rotation + deg_to_rad(90), DURATION)
+	tween.tween_property(self, "rotation", rotation + deg_to_rad(90), DURATION)
+	tween.tween_property(n_label, "rotation", n_label.rotation - deg_to_rad(90), DURATION)
+	tween.tween_property(e_label, "rotation", e_label.rotation - deg_to_rad(90), DURATION)
+	tween.tween_property(s_label, "rotation", s_label.rotation - deg_to_rad(90), DURATION)
+	tween.tween_property(w_label, "rotation", w_label.rotation - deg_to_rad(90), DURATION)
