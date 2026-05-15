@@ -134,6 +134,7 @@
 		"JavaClass",
 		"JavaClassWrapper",
 		"JavaObject",
+		"JavaScriptObject",
 		"JointLimitation3D",
 		"KinematicCollision2D",
 		"KinematicCollision3D",

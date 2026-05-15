@@ -15,42 +15,38 @@ func _on_save_pressed() -> void:
 	await get_tree().create_timer(3).timeout
 	save.text = "Save Image"
 
-var copyText: Array[Array] = [
-	["Error", 3],
-	["Error", 3],
-	["stop", 3],
-	["Error", 3],
-	["it's not working", 3],
-	["Error", 3],
-	["take a hint, dude", 3],
-	["Error", 3],
-	["""LOOK I have spent HOURS trying to get 
-	this copy feature to work. But I have failed.
-	Instead, I decided to put in this little easter egg.
-	How ironic. Next time you're annoyed that you have
-	to drag and drop the downloaded image into the
-	Discord, think about this instead.
-	I apologize.""", 30],
-	["Copied Succesfully", 3]
-	]
-
 var counter: int
 func _on_copy_pressed() -> void:
 	print('Copying')
-	var img: Image = $SubViewportContainer/SubViewport.get_texture().get_image()
+	var imgage_buffer = $SubViewportContainer/SubViewport.get_texture().get_image().save_png_to_buffer()
 	if OS.get_name() == "Web":
-		copy.text = copyText[counter][0]
-		if counter == 9:
-			var navigator = JavaScriptBridge.get_interface("navigator")
-			var clipboard = navigator.clipboard
-			clipboard.writeText("Gotcha")
+		var byte_array: Array = []
+		byte_array.assign(imgage_buffer)
+		var byte_string := JSON.stringify(byte_array)
+		var copy_js_code := """
+	    (async () => {
+	        try {
+	            const bytes = new Uint8Array(%s);
+
+	            const blob = new Blob([bytes], { type: 'image/png' });
+
+	            await navigator.clipboard.write([
+	                new ClipboardItem({
+	                    'image/png': blob
+	                })
+	            ]);
+
+				console.log("Image copied to clipboard");
+	        } catch (err) {
+				console.error("Clipboard write failed:", err);
+	        }
+	    })();
+		""" % byte_string
+		JavaScriptBridge.eval(copy_js_code)
+		print("Copied grid.")
+		copy.text = "Copied"
+		await get_tree().create_timer(3).timeout
+		copy.text = "Copy Image"
 	else:
 		print('Feature not available')
-		img.save_jpg(OS.get_system_dir(OS.SYSTEM_DIR_PICTURES) + "/Grid_" + Time.get_date_string_from_system() + "_" + Time.get_time_string_from_system().replace(":", "-") + ".jpg", 0.75)
 		copy.text = "NA"
-		
-	await get_tree().create_timer(copyText[counter][1]).timeout
-	counter += 1;
-	if counter >= 10:
-		counter = 0
-	copy.text = "Copy Image"
